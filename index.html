@@ -11,22 +11,1379 @@
   </head>
   <body style="margin:0px;">
     <!-- paste here your ai2html block output -->
-ai2html-settings
-settings_version: 0.73
-image_format: png
-responsiveness: fixed
-output: one-file
-html_output_path: ../
-html_output_extension: .html
-image_output_path:images/ 
-local_preview_template: 
-png_number_of_colors: 128
-jpg_quality: 60
-headline: Title here
-leadin: Introductory text here.
-notes: Notes: Text goes here.
-sources: Source: Name goes here.
-credit: By ai2html
+<style media="screen,print">
+	#g-template_viz-box ,
+	#g-template_viz-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-template_viz-box p {
+		margin:0;
+	}
+	#g-template_viz-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-template_viz-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-template_viz-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-template_viz-box .g-aiPointText p { white-space: nowrap; }
+	#g-template_viz-Desktop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-template_viz-Desktop p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:17px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		font-size:15px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-template_viz-Desktop .g-pstyle0 {
+		font-weight:bold;
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+	}
+	#g-template_viz-Desktop .g-pstyle1 {
+		font-weight:bold;
+		line-height:38px;
+		height:38px;
+		font-size:32px;
+	}
+	#g-template_viz-Desktop .g-pstyle2 {
+		font-weight:bold;
+		line-height:76px;
+		height:76px;
+		letter-spacing:-0.025em;
+		font-size:63px;
+	}
+	#g-template_viz-Desktop .g-pstyle3 {
+		line-height:19px;
+		height:19px;
+		letter-spacing:-0.002em;
+		font-size:16px;
+	}
+	#g-template_viz-Desktop .g-pstyle4 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+	}
+	#g-template_viz-Desktop .g-pstyle5 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+		text-align:center;
+		color:rgb(156,155,155);
+	}
+	#g-template_viz-Desktop .g-pstyle6 {
+		line-height:16px;
+		height:16px;
+		font-size:13px;
+		text-align:right;
+		color:rgb(156,155,155);
+	}
+	#g-template_viz-Desktop .g-pstyle7 {
+		height:17px;
+	}
+	#g-template_viz-Tablet {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-template_viz-Tablet p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:13px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		font-size:11px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-template_viz-Tablet .g-pstyle0 {
+		font-weight:bold;
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+	}
+	#g-template_viz-Tablet .g-pstyle1 {
+		font-weight:bold;
+		line-height:29px;
+		height:29px;
+		font-size:24px;
+	}
+	#g-template_viz-Tablet .g-pstyle2 {
+		font-weight:bold;
+		line-height:58px;
+		height:58px;
+		letter-spacing:-0.025em;
+		font-size:48px;
+	}
+	#g-template_viz-Tablet .g-pstyle3 {
+		line-height:14px;
+		height:14px;
+		letter-spacing:-0.002em;
+		font-size:12px;
+	}
+	#g-template_viz-Tablet .g-pstyle4 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+	}
+	#g-template_viz-Tablet .g-pstyle5 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+		text-align:center;
+		color:rgb(156,155,155);
+	}
+	#g-template_viz-Tablet .g-pstyle6 {
+		line-height:12px;
+		height:12px;
+		font-size:10px;
+		text-align:right;
+		color:rgb(156,155,155);
+	}
+	#g-template_viz-Tablet .g-pstyle7 {
+		height:13px;
+	}
+	#g-template_viz-phone {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-template_viz-phone p {
+		font-family:arial,helvetica,sans-serif;
+		font-weight:bold;
+		line-height:8px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		font-size:7px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-template_viz-phone .g-pstyle0 {
+		line-height:25px;
+		height:25px;
+		font-size:21px;
+	}
+	#g-template_viz-phone .g-pstyle1 {
+		line-height:58px;
+		height:58px;
+		letter-spacing:-0.025em;
+		font-size:48px;
+	}
+	#g-template_viz-phone .g-pstyle2 {
+		height:8px;
+	}
+	#g-template_viz-phone .g-pstyle3 {
+		line-height:6px;
+		height:6px;
+		font-size:5px;
+		text-align:center;
+		color:rgb(156,155,155);
+	}
+	#g-template_viz-phone .g-pstyle4 {
+		line-height:6px;
+		height:6px;
+		font-size:5px;
+		text-align:right;
+		color:rgb(156,155,155);
+	}
+
+</style>
+
+<div id="g-template_viz-box" class="ai2html">
+
+	<!-- Artboard: Desktop -->
+	<div id="g-template_viz-Desktop" class="g-artboard" style="width:1200px; height:3705px;" data-aspect-ratio="0.324" data-min-width="1200">
+<div style=""></div>
+		<img id="g-template_viz-Desktop-img" class="g-aiImg" alt="" src="template_viz-Desktop.png"/>
+		<div id="g-ai0-1" class="g-annotations g-aiAbs g-aiPointText" style="top:3.0675%;margin-top:-9.7px;left:65.1104%;width:153px;">
+			<p class="g-pstyle0">WEBPAGES VISITED</p>
+		</div>
+		<div id="g-ai0-2" class="g-annotations g-aiAbs g-aiPointText" style="top:3.0675%;margin-top:-9.7px;left:79.6648%;width:149px;">
+			<p class="g-pstyle0">TRACKERS FOUND </p>
+		</div>
+		<div id="g-ai0-3" class="g-annotations g-aiAbs g-aiPointText" style="top:3.389%;margin-top:-22.6px;left:6.0527%;width:457px;">
+			<p class="g-pstyle1">40 minutes of online tracking</p>
+		</div>
+		<div id="g-ai0-4" class="g-annotations g-aiAbs g-aiPointText" style="top:4.5783%;margin-top:-45.6px;left:65.1103%;width:120px;">
+			<p class="g-pstyle2">164</p>
+		</div>
+		<div id="g-ai0-5" class="g-annotations g-aiAbs g-aiPointText" style="top:4.5783%;margin-top:-45.6px;left:79.6647%;width:119px;">
+			<p class="g-pstyle2">109</p>
+		</div>
+		<div id="g-ai0-6" class="g-annotations g-aiAbs g-aiPointText" style="top:4.3091%;margin-top:-9.7px;left:5.9669%;width:128px;">
+			<p class="g-pstyle0">PERFORMED BY</p>
+		</div>
+		<div id="g-ai0-7" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8819%;margin-top:-10.9px;left:5.9669%;width:136px;">
+			<p class="g-pstyle3">Camilla Marrese</p>
+		</div>
+		<div id="g-ai0-8" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1352%;margin-top:-9.3px;left:27.8509%;width:104px;">
+			<p class="g-pstyle4">Tracker types:</p>
+		</div>
+		<div id="g-ai0-9" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1714%;margin-top:-9.7px;left:5.9669%;width:161px;">
+			<p class="g-pstyle0">TRACKERS TIMELINE</p>
+		</div>
+		<div id="g-ai0-10" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1892%;margin-top:-9.3px;left:37.1479%;width:87px;">
+			<p class="g-pstyle4">Advertising</p>
+		</div>
+		<div id="g-ai0-11" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1892%;margin-top:-9.3px;left:45.1503%;width:85px;">
+			<p class="g-pstyle4">A/V Player</p>
+		</div>
+		<div id="g-ai0-12" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1892%;margin-top:-9.3px;left:52.9591%;width:51px;">
+			<p class="g-pstyle4">CDN</p>
+		</div>
+		<div id="g-ai0-13" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1892%;margin-top:-9.3px;left:57.3697%;width:142px;">
+			<p class="g-pstyle4">Customer interaction</p>
+		</div>
+		<div id="g-ai0-14" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1892%;margin-top:-9.3px;left:69.8345%;width:75px;">
+			<p class="g-pstyle4">Essential</p>
+		</div>
+		<div id="g-ai0-15" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1892%;margin-top:-9.3px;left:76.7114%;width:99px;">
+			<p class="g-pstyle4">Site analytics</p>
+		</div>
+		<div id="g-ai0-16" class="g-annotations g-aiAbs g-aiPointText" style="top:6.1892%;margin-top:-9.3px;left:85.5872%;width:97px;">
+			<p class="g-pstyle4">Social media</p>
+		</div>
+		<div id="g-ai0-17" class="g-annotations g-aiAbs g-aiPointText" style="top:6.918%;margin-top:-9.3px;left:37.1271%;width:66px;">
+			<p class="g-pstyle4">Hosting</p>
+		</div>
+		<div id="g-ai0-18" class="g-annotations g-aiAbs g-aiPointText" style="top:6.918%;margin-top:-9.3px;left:45.1294%;width:49px;">
+			<p class="g-pstyle4">Misc</p>
+		</div>
+		<div id="g-ai0-19" class="g-annotations g-aiAbs g-aiPointText" style="top:6.918%;margin-top:-9.3px;left:52.9367%;width:77px;">
+			<p class="g-pstyle4">Unknown</p>
+		</div>
+		<div id="g-ai0-20" class="g-annotations g-aiAbs g-aiPointText" style="top:8.1055%;margin-top:-9.3px;left:27.9408%;margin-left:-16px;width:32px;">
+			<p class="g-pstyle5">0&rsquo;</p>
+		</div>
+		<div id="g-ai0-21" class="g-annotations g-aiAbs g-aiPointText" style="top:8.1055%;margin-top:-9.3px;left:41.1405%;margin-left:-19.5px;width:39px;">
+			<p class="g-pstyle5">10&rsquo;</p>
+		</div>
+		<div id="g-ai0-22" class="g-annotations g-aiAbs g-aiPointText" style="top:8.1055%;margin-top:-9.3px;left:57.6885%;margin-left:-20px;width:40px;">
+			<p class="g-pstyle5">20&rsquo;</p>
+		</div>
+		<div id="g-ai0-23" class="g-annotations g-aiAbs g-aiPointText" style="top:8.1055%;margin-top:-9.3px;left:73.6834%;margin-left:-20px;width:40px;">
+			<p class="g-pstyle5">30&rsquo;</p>
+		</div>
+		<div id="g-ai0-24" class="g-annotations g-aiAbs g-aiPointText" style="top:8.1055%;margin-top:-9.3px;right:73.6073%;width:51px;">
+			<p class="g-pstyle6">Time</p>
+		</div>
+		<div id="g-ai0-25" class="g-annotations g-aiAbs g-aiPointText" style="top:8.1055%;margin-top:-9.3px;left:90.1606%;margin-left:-20px;width:40px;">
+			<p class="g-pstyle5">40&rsquo;</p>
+		</div>
+		<div id="g-ai0-26" class="g-annotations g-aiAbs g-aiPointText" style="top:9.4357%;margin-top:-9.6px;left:20.8167%;width:91px;">
+			<p class="g-pstyle7">kataweb.it</p>
+		</div>
+		<div id="g-ai0-27" class="g-annotations g-aiAbs g-aiPointText" style="top:10.0295%;margin-top:-9.6px;left:14.2515%;width:169px;">
+			<p class="g-pstyle7">netratings_sitecensus</p>
+		</div>
+		<div id="g-ai0-28" class="g-annotations g-aiAbs g-aiPointText" style="top:10.6233%;margin-top:-9.6px;left:21.3805%;width:84px;">
+			<p class="g-pstyle7">facebook</p>
+		</div>
+		<div id="g-ai0-29" class="g-annotations g-aiAbs g-aiPointText" style="top:11.1901%;margin-top:-9.6px;left:17.6396%;width:129px;">
+			<p class="g-pstyle7">googleapis.com</p>
+		</div>
+		<div id="g-ai0-30" class="g-annotations g-aiAbs g-aiPointText" style="top:11.7839%;margin-top:-9.6px;left:14.5312%;width:166px;">
+			<p class="g-pstyle7">google_tag_manager</p>
+		</div>
+		<div id="g-ai0-31" class="g-annotations g-aiAbs g-aiPointText" style="top:12.3776%;margin-top:-9.6px;left:22.7209%;width:68px;">
+			<p class="g-pstyle7">google</p>
+		</div>
+		<div id="g-ai0-32" class="g-annotations g-aiAbs g-aiPointText" style="top:12.9714%;margin-top:-9.6px;left:21.2397%;width:86px;">
+			<p class="g-pstyle7">chartbeat</p>
+		</div>
+		<div id="g-ai0-33" class="g-annotations g-aiAbs g-aiPointText" style="top:13.5652%;margin-top:-9.6px;left:21.453%;width:83px;">
+			<p class="g-pstyle7">webtrekk</p>
+		</div>
+		<div id="g-ai0-34" class="g-annotations g-aiAbs g-aiPointText" style="top:14.159%;margin-top:-9.6px;left:20.2519%;width:97px;">
+			<p class="g-pstyle7">doubleclick</p>
+		</div>
+		<div id="g-ai0-35" class="g-annotations g-aiAbs g-aiPointText" style="top:14.7528%;margin-top:-9.6px;left:23.4985%;width:58px;">
+			<p class="g-pstyle7">gigya</p>
+		</div>
+		<div id="g-ai0-36" class="g-annotations g-aiAbs g-aiPointText" style="top:15.3196%;margin-top:-9.6px;left:20.1111%;width:99px;">
+			<p class="g-pstyle7">krux_digital</p>
+		</div>
+		<div id="g-ai0-37" class="g-annotations g-aiAbs g-aiPointText" style="top:15.9134%;margin-top:-9.6px;left:18.9119%;width:113px;">
+			<p class="g-pstyle7">admantx.com</p>
+		</div>
+		<div id="g-ai0-38" class="g-annotations g-aiAbs g-aiPointText" style="top:16.5072%;margin-top:-9.6px;left:18.6267%;width:117px;">
+			<p class="g-pstyle7">facebook_cdn</p>
+		</div>
+		<div id="g-ai0-39" class="g-annotations g-aiAbs g-aiPointText" style="top:17.101%;margin-top:-9.6px;left:22.3695%;width:72px;">
+			<p class="g-pstyle7">rubicon</p>
+		</div>
+		<div id="g-ai0-40" class="g-annotations g-aiAbs g-aiPointText" style="top:17.6948%;margin-top:-9.6px;left:15.6615%;width:152px;">
+			<p class="g-pstyle7">google_syndication</p>
+		</div>
+		<div id="g-ai0-41" class="g-annotations g-aiAbs g-aiPointText" style="top:18.2886%;margin-top:-9.6px;left:23.4279%;width:59px;">
+			<p class="g-pstyle7">teads</p>
+		</div>
+		<div id="g-ai0-42" class="g-annotations g-aiAbs g-aiPointText" style="top:18.8824%;margin-top:-9.6px;left:18.0643%;width:124px;">
+			<p class="g-pstyle7">ampproject.org</p>
+		</div>
+		<div id="g-ai0-43" class="g-annotations g-aiAbs g-aiPointText" style="top:19.4492%;margin-top:-9.6px;left:15.2386%;width:158px;">
+			<p class="g-pstyle7">integral_ad_science</p>
+		</div>
+		<div id="g-ai0-44" class="g-annotations g-aiAbs g-aiPointText" style="top:20.043%;margin-top:-9.6px;left:22.8643%;width:66px;">
+			<p class="g-pstyle7">gstatic</p>
+		</div>
+		<div id="g-ai0-45" class="g-annotations g-aiAbs g-aiPointText" style="top:20.6368%;margin-top:-9.6px;left:17.0741%;width:136px;">
+			<p class="g-pstyle7">google_analytics</p>
+		</div>
+		<div id="g-ai0-46" class="g-annotations g-aiAbs g-aiPointText" style="top:21.2305%;margin-top:-9.6px;left:21.944%;width:77px;">
+			<p class="g-pstyle7">neodata</p>
+		</div>
+		<div id="g-ai0-47" class="g-annotations g-aiAbs g-aiPointText" style="top:21.8243%;margin-top:-9.6px;left:22.0166%;width:76px;">
+			<p class="g-pstyle7">amazon</p>
+		</div>
+		<div id="g-ai0-48" class="g-annotations g-aiAbs g-aiPointText" style="top:22.4181%;margin-top:-9.6px;left:19.2629%;width:109px;">
+			<p class="g-pstyle7">amazon_cdn</p>
+		</div>
+		<div id="g-ai0-49" class="g-annotations g-aiAbs g-aiPointText" style="top:23.0119%;margin-top:-9.6px;left:15.8761%;width:150px;">
+			<p class="g-pstyle7">amazon_adsystem</p>
+		</div>
+		<div id="g-ai0-50" class="g-annotations g-aiAbs g-aiPointText" style="top:23.5787%;margin-top:-9.6px;left:20.7448%;width:91px;">
+			<p class="g-pstyle7">pulsepoint</p>
+		</div>
+		<div id="g-ai0-51" class="g-annotations g-aiAbs g-aiPointText" style="top:24.1725%;margin-top:-9.6px;left:12.6257%;width:189px;">
+			<p class="g-pstyle7">media_innovation_group</p>
+		</div>
+		<div id="g-ai0-52" class="g-annotations g-aiAbs g-aiPointText" style="top:24.7663%;margin-top:-9.6px;left:22.5821%;width:69px;">
+			<p class="g-pstyle7">adform</p>
+		</div>
+		<div id="g-ai0-53" class="g-annotations g-aiAbs g-aiPointText" style="top:25.3601%;margin-top:-9.6px;left:19.3329%;width:108px;">
+			<p class="g-pstyle7">spotxchange</p>
+		</div>
+		<div id="g-ai0-54" class="g-annotations g-aiAbs g-aiPointText" style="top:25.9539%;margin-top:-9.6px;left:21.3116%;width:85px;">
+			<p class="g-pstyle7">bidswitch</p>
+		</div>
+		<div id="g-ai0-55" class="g-annotations g-aiAbs g-aiPointText" style="top:26.5477%;margin-top:-9.6px;left:23.0745%;width:64px;">
+			<p class="g-pstyle7">openx</p>
+		</div>
+		<div id="g-ai0-56" class="g-annotations g-aiAbs g-aiPointText" style="top:27.1415%;margin-top:-9.6px;left:16.5786%;width:142px;">
+			<p class="g-pstyle7">index_exchange_</p>
+		</div>
+		<div id="g-ai0-57" class="g-annotations g-aiAbs g-aiPointText" style="top:27.7083%;margin-top:-9.6px;left:17.6414%;width:129px;">
+			<p class="g-pstyle7">advertising.com</p>
+		</div>
+		<div id="g-ai0-58" class="g-annotations g-aiAbs g-aiPointText" style="top:28.3021%;margin-top:-9.6px;left:21.0269%;width:88px;">
+			<p class="g-pstyle7">appnexus</p>
+		</div>
+		<div id="g-ai0-59" class="g-annotations g-aiAbs g-aiPointText" style="top:28.8959%;margin-top:-9.6px;left:21.3122%;width:85px;">
+			<p class="g-pstyle7">stickyads</p>
+		</div>
+		<div id="g-ai0-60" class="g-annotations g-aiAbs g-aiPointText" style="top:29.4897%;margin-top:-9.6px;left:22.4395%;width:71px;">
+			<p class="g-pstyle7">exelate</p>
+		</div>
+		<div id="g-ai0-61" class="g-annotations g-aiAbs g-aiPointText" style="top:30.0834%;margin-top:-9.6px;left:17.5007%;width:130px;">
+			<p class="g-pstyle7">twitter_analytics</p>
+		</div>
+		<div id="g-ai0-62" class="g-annotations g-aiAbs g-aiPointText" style="top:30.6772%;margin-top:-9.6px;left:14.7419%;width:164px;">
+			<p class="g-pstyle7">yahoo_ad_exchange</p>
+		</div>
+		<div id="g-ai0-63" class="g-annotations g-aiAbs g-aiPointText" style="top:31.271%;margin-top:-9.6px;left:21.3816%;width:84px;">
+			<p class="g-pstyle7">pubmatic</p>
+		</div>
+		<div id="g-ai0-64" class="g-annotations g-aiAbs g-aiPointText" style="top:31.8378%;margin-top:-9.6px;left:11.4239%;width:204px;">
+			<p class="g-pstyle7">adobe_audience_manager</p>
+		</div>
+		<div id="g-ai0-65" class="g-annotations g-aiAbs g-aiPointText" style="top:32.4316%;margin-top:-9.6px;left:13.6172%;width:177px;">
+			<p class="g-pstyle7">amazon_web_services</p>
+		</div>
+		<div id="g-ai0-66" class="g-annotations g-aiAbs g-aiPointText" style="top:33.0254%;margin-top:-9.6px;left:15.7334%;width:152px;">
+			<p class="g-pstyle7">amazon_cloudfront</p>
+		</div>
+		<div id="g-ai0-67" class="g-annotations g-aiAbs g-aiPointText" style="top:33.6192%;margin-top:-9.6px;left:16.5792%;width:141px;">
+			<p class="g-pstyle7">typekit_by_adobe</p>
+		</div>
+		<div id="g-ai0-68" class="g-annotations g-aiAbs g-aiPointText" style="top:34.213%;margin-top:-9.6px;left:23.147%;width:63px;">
+			<p class="g-pstyle7">vimeo</p>
+		</div>
+		<div id="g-ai0-69" class="g-annotations g-aiAbs g-aiPointText" style="top:34.8068%;margin-top:-9.6px;left:22.4395%;width:71px;">
+			<p class="g-pstyle7">addthis</p>
+		</div>
+		<div id="g-ai0-70" class="g-annotations g-aiAbs g-aiPointText" style="top:35.4006%;margin-top:-9.6px;left:21.6632%;width:80px;">
+			<p class="g-pstyle7">pingdom</p>
+		</div>
+		<div id="g-ai0-71" class="g-annotations g-aiAbs g-aiPointText" style="top:35.9674%;margin-top:-9.6px;left:22.0154%;width:76px;">
+			<p class="g-pstyle7">youtube</p>
+		</div>
+		<div id="g-ai0-72" class="g-annotations g-aiAbs g-aiPointText" style="top:36.5612%;margin-top:-9.6px;left:18.2019%;width:122px;">
+			<p class="g-pstyle7">google_photos</p>
+		</div>
+		<div id="g-ai0-73" class="g-annotations g-aiAbs g-aiPointText" style="top:37.155%;margin-top:-9.6px;left:23.3577%;width:60px;">
+			<p class="g-pstyle7">hotjar</p>
+		</div>
+		<div id="g-ai0-74" class="g-annotations g-aiAbs g-aiPointText" style="top:37.7488%;margin-top:-9.6px;left:21.453%;width:83px;">
+			<p class="g-pstyle7">imgix.net</p>
+		</div>
+		<div id="g-ai0-75" class="g-annotations g-aiAbs g-aiPointText" style="top:38.3426%;margin-top:-9.6px;left:23.7113%;width:56px;">
+			<p class="g-pstyle7">moat</p>
+		</div>
+		<div id="g-ai0-76" class="g-annotations g-aiAbs g-aiPointText" style="top:38.9364%;margin-top:-9.6px;left:17.4263%;width:131px;">
+			<p class="g-pstyle7">facebook_graph</p>
+		</div>
+		<div id="g-ai0-77" class="g-annotations g-aiAbs g-aiPointText" style="top:39.5301%;margin-top:-9.6px;left:14.6037%;width:165px;">
+			<p class="g-pstyle7">akamai_technologies</p>
+		</div>
+		<div id="g-ai0-78" class="g-annotations g-aiAbs g-aiPointText" style="top:40.0969%;margin-top:-9.6px;left:21.3797%;width:84px;">
+			<p class="g-pstyle7">bing_ads</p>
+		</div>
+		<div id="g-ai0-79" class="g-annotations g-aiAbs g-aiPointText" style="top:40.6907%;margin-top:-9.6px;left:22.228%;width:74px;">
+			<p class="g-pstyle7">linkedin</p>
+		</div>
+		<div id="g-ai0-80" class="g-annotations g-aiAbs g-aiPointText" style="top:41.2845%;margin-top:-9.6px;left:17.8534%;width:126px;">
+			<p class="g-pstyle7">branch_metrics</p>
+		</div>
+		<div id="g-ai0-81" class="g-annotations g-aiAbs g-aiPointText" style="top:41.8783%;margin-top:-9.6px;left:17.2886%;width:133px;">
+			<p class="g-pstyle7">wordpress_stats</p>
+		</div>
+		<div id="g-ai0-82" class="g-annotations g-aiAbs g-aiPointText" style="top:42.4721%;margin-top:-9.6px;left:10.2279%;width:218px;">
+			<p class="g-pstyle7">linkedin_marketing_solutions</p>
+		</div>
+		<div id="g-ai0-83" class="g-annotations g-aiAbs g-aiPointText" style="top:43.0659%;margin-top:-9.6px;left:20.3939%;width:96px;">
+			<p class="g-pstyle7">twitter_ads</p>
+		</div>
+		<div id="g-ai0-84" class="g-annotations g-aiAbs g-aiPointText" style="top:43.6597%;margin-top:-9.6px;left:23.8521%;width:54px;">
+			<p class="g-pstyle7">atlas</p>
+		</div>
+		<div id="g-ai0-85" class="g-annotations g-aiAbs g-aiPointText" style="top:44.2265%;margin-top:-9.6px;left:19.2616%;width:109px;">
+			<p class="g-pstyle7">google_fonts</p>
+		</div>
+		<div id="g-ai0-86" class="g-annotations g-aiAbs g-aiPointText" style="top:44.8203%;margin-top:-9.6px;left:21.2397%;width:86px;">
+			<p class="g-pstyle7">bootstrap</p>
+		</div>
+		<div id="g-ai0-87" class="g-annotations g-aiAbs g-aiPointText" style="top:45.4141%;margin-top:-9.6px;left:20.6767%;width:93px;">
+			<p class="g-pstyle7">tripadvisor</p>
+		</div>
+		<div id="g-ai0-88" class="g-annotations g-aiAbs g-aiPointText" style="top:46.0079%;margin-top:-9.6px;left:10.4393%;width:215px;">
+			<p class="g-pstyle7">scorecard_research_beacon</p>
+		</div>
+		<div id="g-ai0-89" class="g-annotations g-aiAbs g-aiPointText" style="top:46.6017%;margin-top:-9.6px;left:18.9094%;width:114px;">
+			<p class="g-pstyle7">google_users</p>
+		</div>
+		<div id="g-ai0-90" class="g-annotations g-aiAbs g-aiPointText" style="top:47.1955%;margin-top:-9.6px;left:22.3006%;width:73px;">
+			<p class="g-pstyle7">trustarc</p>
+		</div>
+		<div id="g-ai0-91" class="g-annotations g-aiAbs g-aiPointText" style="top:47.7893%;margin-top:-9.6px;left:21.9453%;width:77px;">
+			<p class="g-pstyle7">outbrain</p>
+		</div>
+		<div id="g-ai0-92" class="g-annotations g-aiAbs g-aiPointText" style="top:48.3561%;margin-top:-9.6px;left:21.9453%;width:77px;">
+			<p class="g-pstyle7">tradelab</p>
+		</div>
+		<div id="g-ai0-93" class="g-annotations g-aiAbs g-aiPointText" style="top:48.9498%;margin-top:-9.6px;left:21.3805%;width:84px;">
+			<p class="g-pstyle7">snapchat</p>
+		</div>
+		<div id="g-ai0-94" class="g-annotations g-aiAbs g-aiPointText" style="top:49.5436%;margin-top:-9.6px;left:15.9448%;width:149px;">
+			<p class="g-pstyle7">google_adservices</p>
+		</div>
+		<div id="g-ai0-95" class="g-annotations g-aiAbs g-aiPointText" style="top:50.1374%;margin-top:-9.6px;left:22.0885%;width:75px;">
+			<p class="g-pstyle7">nyt.com</p>
+		</div>
+		<div id="g-ai0-96" class="g-annotations g-aiAbs g-aiPointText" style="top:50.7312%;margin-top:-9.6px;left:24.487%;width:47px;">
+			<p class="g-pstyle7">adx</p>
+		</div>
+		<div id="g-ai0-97" class="g-annotations g-aiAbs g-aiPointText" style="top:51.325%;margin-top:-9.6px;left:20.8887%;width:90px;">
+			<p class="g-pstyle7">optimizely</p>
+		</div>
+		<div id="g-ai0-98" class="g-annotations g-aiAbs g-aiPointText" style="top:51.9188%;margin-top:-9.6px;left:20.8862%;width:90px;">
+			<p class="g-pstyle7">datadome</p>
+		</div>
+		<div id="g-ai0-99" class="g-annotations g-aiAbs g-aiPointText" style="top:52.4856%;margin-top:-9.6px;left:19.6857%;width:104px;">
+			<p class="g-pstyle7">iab_consent</p>
+		</div>
+		<div id="g-ai0-100" class="g-annotations g-aiAbs g-aiPointText" style="top:53.0794%;margin-top:-9.6px;left:21.3816%;width:84px;">
+			<p class="g-pstyle7">embed.ly</p>
+		</div>
+		<div id="g-ai0-101" class="g-annotations g-aiAbs g-aiPointText" style="top:53.6732%;margin-top:-9.6px;left:22.7228%;width:68px;">
+			<p class="g-pstyle7">lotame</p>
+		</div>
+		<div id="g-ai0-102" class="g-annotations g-aiAbs g-aiPointText" style="top:54.267%;margin-top:-9.6px;left:22.4408%;width:71px;">
+			<p class="g-pstyle7">parsely</p>
+		</div>
+		<div id="g-ai0-103" class="g-annotations g-aiAbs g-aiPointText" style="top:54.8608%;margin-top:-9.6px;left:22.5102%;width:70px;">
+			<p class="g-pstyle7">bluekai</p>
+		</div>
+		<div id="g-ai0-104" class="g-annotations g-aiAbs g-aiPointText" style="top:55.4546%;margin-top:-9.6px;left:17.8534%;width:126px;">
+			<p class="g-pstyle7">instagram_com</p>
+		</div>
+		<div id="g-ai0-105" class="g-annotations g-aiAbs g-aiPointText" style="top:56.0484%;margin-top:-9.6px;left:17.0746%;width:136px;">
+			<p class="g-pstyle7">monotype_gmbh</p>
+		</div>
+		<div id="g-ai0-106" class="g-annotations g-aiAbs g-aiPointText" style="top:56.6152%;margin-top:-9.6px;left:21.5938%;width:81px;">
+			<p class="g-pstyle7">gumgum</p>
+		</div>
+		<div id="g-ai0-107" class="g-annotations g-aiAbs g-aiPointText" style="top:57.209%;margin-top:-9.6px;left:16.4428%;width:143px;">
+			<p class="g-pstyle7">brandmetrics.com</p>
+		</div>
+		<div id="g-ai0-108" class="g-annotations g-aiAbs g-aiPointText" style="top:57.8027%;margin-top:-9.6px;left:23.4291%;width:59px;">
+			<p class="g-pstyle7">celtra</p>
+		</div>
+		<div id="g-ai0-109" class="g-annotations g-aiAbs g-aiPointText" style="top:58.3965%;margin-top:-9.6px;left:21.112%;width:87px;">
+			<p class="g-pstyle7">jw_player</p>
+		</div>
+		<div id="g-ai0-110" class="g-annotations g-aiAbs g-aiPointText" style="top:58.9903%;margin-top:-9.6px;left:22.4525%;width:71px;">
+			<p class="g-pstyle7">jetpack</p>
+		</div>
+		<div id="g-ai0-111" class="g-annotations g-aiAbs g-aiPointText" style="top:59.5841%;margin-top:-9.6px;left:23.1451%;width:63px;">
+			<p class="g-pstyle7">digioh</p>
+		</div>
+		<div id="g-ai0-112" class="g-annotations g-aiAbs g-aiPointText" style="top:60.1779%;margin-top:-9.6px;left:21.0276%;width:88px;">
+			<p class="g-pstyle7">quantcast</p>
+		</div>
+		<div id="g-ai0-113" class="g-annotations g-aiAbs g-aiPointText" style="top:60.7447%;margin-top:-9.6px;left:22.2987%;width:73px;">
+			<p class="g-pstyle7">apester</p>
+		</div>
+		<div id="g-ai0-114" class="g-annotations g-aiAbs g-aiPointText" style="top:61.3385%;margin-top:-9.6px;left:21.3835%;width:84px;">
+			<p class="g-pstyle7">microsoft</p>
+		</div>
+		<div id="g-ai0-115" class="g-annotations g-aiAbs g-aiPointText" style="top:61.9323%;margin-top:-9.6px;left:20.25%;width:97px;">
+			<p class="g-pstyle7">quantcount</p>
+		</div>
+		<div id="g-ai0-116" class="g-annotations g-aiAbs g-aiPointText" style="top:62.5261%;margin-top:-9.6px;left:21.1702%;width:86px;">
+			<p class="g-pstyle7">new_relic</p>
+		</div>
+		<div id="g-ai0-117" class="g-annotations g-aiAbs g-aiPointText" style="top:63.1199%;margin-top:-9.6px;left:23.2171%;width:62px;">
+			<p class="g-pstyle7">castle</p>
+		</div>
+		<div id="g-ai0-118" class="g-annotations g-aiAbs g-aiPointText" style="top:63.7137%;margin-top:-9.6px;left:21.3816%;width:84px;">
+			<p class="g-pstyle7">appsflyer</p>
+		</div>
+		<div id="g-ai0-119" class="g-annotations g-aiAbs g-aiPointText" style="top:64.3075%;margin-top:-9.6px;left:20.3927%;width:96px;">
+			<p class="g-pstyle7">stackadapt</p>
+		</div>
+		<div id="g-ai0-120" class="g-annotations g-aiAbs g-aiPointText" style="top:64.8743%;margin-top:-9.6px;left:21.6637%;width:80px;">
+			<p class="g-pstyle7">zemanta</p>
+		</div>
+		<div id="g-ai0-121" class="g-annotations g-aiAbs g-aiPointText" style="top:65.4681%;margin-top:-9.6px;left:21.6637%;width:80px;">
+			<p class="g-pstyle7">pinterest</p>
+		</div>
+		<div id="g-ai0-122" class="g-annotations g-aiAbs g-aiPointText" style="top:66.0619%;margin-top:-9.6px;left:23.7807%;width:55px;">
+			<p class="g-pstyle7">qubit</p>
+		</div>
+		<div id="g-ai0-123" class="g-annotations g-aiAbs g-aiPointText" style="top:66.6556%;margin-top:-9.6px;left:17.6401%;width:129px;">
+			<p class="g-pstyle7">bannerflow.com</p>
+		</div>
+		<div id="g-ai0-124" class="g-annotations g-aiAbs g-aiPointText" style="top:67.2494%;margin-top:-9.6px;left:22.2987%;width:73px;">
+			<p class="g-pstyle7">certona</p>
+		</div>
+		<div id="g-ai0-125" class="g-annotations g-aiAbs g-aiPointText" style="top:67.8432%;margin-top:-9.6px;left:6.9781%;width:257px;">
+			<p class="g-pstyle7">adobe_dynamic_tag_management</p>
+		</div>
+		<div id="g-ai0-126" class="g-annotations g-aiAbs g-aiPointText" style="top:68.437%;margin-top:-9.6px;left:21.6637%;width:80px;">
+			<p class="g-pstyle7">polar.me</p>
+		</div>
+		<div id="g-ai0-127" class="g-annotations g-aiAbs g-aiPointText" style="top:69.0038%;margin-top:-9.6px;left:23.4291%;width:59px;">
+			<p class="g-pstyle7">criteo</p>
+		</div>
+		<div id="g-ai0-128" class="g-annotations g-aiAbs g-aiPointText" style="top:69.5976%;margin-top:-9.6px;left:20.2537%;width:97px;">
+			<p class="g-pstyle7">merkle_rkg</p>
+		</div>
+		<div id="g-ai0-129" class="g-annotations g-aiAbs g-aiPointText" style="top:70.1914%;margin-top:-9.6px;left:20.9575%;width:89px;">
+			<p class="g-pstyle7">tradedesk</p>
+		</div>
+		<div id="g-ai0-130" class="g-annotations g-aiAbs g-aiPointText" style="top:70.7852%;margin-top:-9.6px;left:21.7357%;width:80px;">
+			<p class="g-pstyle7">liveramp</p>
+		</div>
+		<div id="g-ai0-131" class="g-annotations g-aiAbs g-aiPointText" style="top:71.379%;margin-top:-9.6px;left:21.0301%;width:88px;">
+			<p class="g-pstyle7">comscore</p>
+		</div>
+		<div id="g-ai0-132" class="g-annotations g-aiAbs g-aiPointText" style="top:71.9728%;margin-top:-9.6px;left:21.2378%;width:86px;">
+			<p class="g-pstyle7">optanaon</p>
+		</div>
+		<div id="g-ai0-133" class="g-annotations g-aiAbs g-aiPointText" style="top:72.5666%;margin-top:-9.6px;left:21.946%;width:77px;">
+			<p class="g-pstyle7">onetrust</p>
+		</div>
+		<div id="g-ai0-134" class="g-annotations g-aiAbs g-aiPointText" style="top:73.1334%;margin-top:-9.6px;left:23.1476%;width:63px;">
+			<p class="g-pstyle7">twitter</p>
+		</div>
+		<div id="g-ai0-135" class="g-annotations g-aiAbs g-aiPointText" style="top:73.7272%;margin-top:-9.6px;left:16.0881%;width:147px;">
+			<p class="g-pstyle7">twitter_syndication</p>
+		</div>
+		<div id="g-ai0-136" class="g-annotations g-aiAbs g-aiPointText" style="top:74.321%;margin-top:-9.6px;left:17.5694%;width:130px;">
+			<p class="g-pstyle7">sailthru_horizon</p>
+		</div>
+		<div id="g-ai0-137" class="g-annotations g-aiAbs g-aiPointText" style="top:74.9148%;margin-top:-9.6px;left:16.1545%;width:147px;">
+			<p class="g-pstyle7">bounce_exchange</p>
+		</div>
+		<div id="g-ai0-138" class="g-annotations g-aiAbs g-aiPointText" style="top:75.5086%;margin-top:-9.6px;left:21.6637%;width:80px;">
+			<p class="g-pstyle7">turn_inc.</p>
+		</div>
+		<div id="g-ai0-139" class="g-annotations g-aiAbs g-aiPointText" style="top:76.1023%;margin-top:-9.6px;left:16.5811%;width:141px;">
+			<p class="g-pstyle7">linkedin_analytics</p>
+		</div>
+		<div id="g-ai0-140" class="g-annotations g-aiAbs g-aiPointText" style="top:76.6961%;margin-top:-9.6px;left:23.3566%;width:60px;">
+			<p class="g-pstyle7">tapad</p>
+		</div>
+		<div id="g-ai0-141" class="g-annotations g-aiAbs g-aiPointText" style="top:77.2629%;margin-top:-9.6px;left:21.3841%;width:84px;">
+			<p class="g-pstyle7">skimlinks</p>
+		</div>
+		<div id="g-ai0-142" class="g-annotations g-aiAbs g-aiPointText" style="top:77.8567%;margin-top:-9.6px;left:17.1453%;width:135px;">
+			<p class="g-pstyle7">orc_international</p>
+		</div>
+		<div id="g-ai0-143" class="g-annotations g-aiAbs g-aiPointText" style="top:78.4505%;margin-top:-9.6px;left:23.0174%;width:64px;">
+			<p class="g-pstyle7">jquery</p>
+		</div>
+		<div id="g-ai0-144" class="g-annotations g-aiAbs g-aiPointText" style="top:79.0443%;margin-top:-9.6px;left:17.851%;width:126px;">
+			<p class="g-pstyle7">deepintent.com</p>
+		</div>
+		<div id="g-ai0-145" class="g-annotations g-aiAbs g-aiPointText" style="top:79.6381%;margin-top:-9.6px;left:21.7332%;width:80px;">
+			<p class="g-pstyle7">bouncex</p>
+		</div>
+		<div id="g-ai0-146" class="g-annotations g-aiAbs g-aiPointText" style="top:80.2319%;margin-top:-9.6px;left:20.1105%;width:99px;">
+			<p class="g-pstyle7">trueanthem</p>
+		</div>
+		<div id="g-ai0-147" class="g-annotations g-aiAbs g-aiPointText" style="top:80.8257%;margin-top:-9.6px;left:20.534%;width:94px;">
+			<p class="g-pstyle7">radiumone</p>
+		</div>
+		<div id="g-ai0-148" class="g-annotations g-aiAbs g-aiPointText" style="top:81.3925%;margin-top:-9.6px;left:23.4285%;width:59px;">
+			<p class="g-pstyle7">adroll</p>
+		</div>
+		<div id="g-ai0-149" class="g-annotations g-aiAbs g-aiPointText" style="top:81.9863%;margin-top:-9.6px;left:19.336%;width:108px;">
+			<p class="g-pstyle7">rackcdn.com</p>
+		</div>
+		<div id="g-ai0-150" class="g-annotations g-aiAbs g-aiPointText" style="top:82.5801%;margin-top:-9.6px;left:21.0282%;width:88px;">
+			<p class="g-pstyle7">cloudflare</p>
+		</div>
+		<div id="g-ai0-151" class="g-annotations g-aiAbs g-aiPointText" style="top:83.1739%;margin-top:-9.6px;left:21.6637%;width:80px;">
+			<p class="g-pstyle7">segment</p>
+		</div>
+		<div id="g-ai0-152" class="g-annotations g-aiAbs g-aiPointText" style="top:83.7677%;margin-top:-9.6px;left:21.0282%;width:88px;">
+			<p class="g-pstyle7">amplitude</p>
+		</div>
+		<div id="g-ai0-153" class="g-annotations g-aiAbs g-aiPointText" style="top:84.3615%;margin-top:-9.6px;left:18.5579%;width:118px;">
+			<p class="g-pstyle7">cedexis_radar</p>
+		</div>
+		<div id="g-ai0-154" class="g-annotations g-aiAbs g-aiPointText" style="top:84.9552%;margin-top:-9.6px;left:18.3477%;width:120px;">
+			<p class="g-pstyle7">optimicdn.com</p>
+		</div>
+		<div id="g-ai0-155" class="g-annotations g-aiAbs g-aiPointText" style="top:85.522%;margin-top:-9.6px;left:19.9709%;width:101px;">
+			<p class="g-pstyle7">mncdn.com</p>
+		</div>
+		<div id="g-ai0-156" class="g-annotations g-aiAbs g-aiPointText" style="top:86.1158%;margin-top:-9.6px;left:18.7712%;width:115px;">
+			<p class="g-pstyle7">wikimedia.org</p>
+		</div>
+		<div id="g-ai0-157" class="g-annotations g-aiAbs g-aiPointText" style="top:86.7096%;margin-top:-9.6px;left:22.4408%;width:71px;">
+			<p class="g-pstyle7">tealium</p>
+		</div>
+		<div id="g-ai0-158" class="g-annotations g-aiAbs g-aiPointText" style="top:87.3034%;margin-top:-9.6px;left:17.6396%;width:129px;">
+			<p class="g-pstyle7">rakuten_display</p>
+		</div>
+		<div id="g-ai0-159" class="g-annotations g-aiAbs g-aiPointText" style="top:87.8972%;margin-top:-9.6px;left:17.5248%;width:130px;">
+			<p class="g-pstyle7">linksynergy.com</p>
+		</div>
+		<div id="g-ai0-160" class="g-annotations g-aiAbs g-aiPointText" style="top:88.491%;margin-top:-9.6px;left:21.3116%;width:85px;">
+			<p class="g-pstyle7">salecycle</p>
+		</div>
+		<div id="g-ai0-161" class="g-annotations g-aiAbs g-aiPointText" style="top:89.0848%;margin-top:-9.6px;left:16.3678%;width:144px;">
+			<p class="g-pstyle7">contentsquare.net</p>
+		</div>
+		<div id="g-ai0-162" class="g-annotations g-aiAbs g-aiPointText" style="top:89.6516%;margin-top:-9.6px;left:20.3238%;width:97px;">
+			<p class="g-pstyle7">dc_stormiq</p>
+		</div>
+		<div id="g-ai0-163" class="g-annotations g-aiAbs g-aiPointText" style="top:90.2454%;margin-top:-9.6px;left:20.4639%;width:95px;">
+			<p class="g-pstyle7">fastlylb.net</p>
+		</div>
+		<div id="g-ai0-164" class="g-annotations g-aiAbs g-aiPointText" style="top:90.8392%;margin-top:-9.6px;left:17.7821%;width:127px;">
+			<p class="g-pstyle7">sitelabweb.com</p>
+		</div>
+		<div id="g-ai0-165" class="g-annotations g-aiAbs g-aiPointText" style="top:91.433%;margin-top:-9.6px;left:22.5244%;width:70px;">
+			<p class="g-pstyle7">jsdelivr</p>
+		</div>
+		<div id="g-ai0-166" class="g-annotations g-aiAbs g-aiPointText" style="top:92.0268%;margin-top:-9.6px;left:20.6772%;width:92px;">
+			<p class="g-pstyle7">stripe.com</p>
+		</div>
+		<div id="g-ai0-167" class="g-annotations g-aiAbs g-aiPointText" style="top:92.6206%;margin-top:-9.6px;left:19.1227%;width:111px;">
+			<p class="g-pstyle7">shopify_stats</p>
+		</div>
+		<div id="g-ai0-168" class="g-annotations g-aiAbs g-aiPointText" style="top:93.2144%;margin-top:-9.6px;left:17.7114%;width:128px;">
+			<p class="g-pstyle7">shopifycdn.com</p>
+		</div>
+		<div id="g-ai0-169" class="g-annotations g-aiAbs g-aiPointText" style="top:93.7812%;margin-top:-9.6px;left:16.7231%;width:140px;">
+			<p class="g-pstyle7">shopifycloud.com</p>
+		</div>
+		<div id="g-ai0-170" class="g-annotations g-aiAbs g-aiPointText" style="top:94.3749%;margin-top:-9.6px;left:22.7923%;width:67px;">
+			<p class="g-pstyle7">paypal</p>
+		</div>
+		<div id="g-ai0-171" class="g-annotations g-aiAbs g-aiPointText" style="top:94.9687%;margin-top:-9.6px;left:18.9795%;width:113px;">
+			<p class="g-pstyle7">nakanohito.jp</p>
+		</div>
+		<div id="g-ai0-172" class="g-annotations g-aiAbs g-aiPointText" style="top:95.5625%;margin-top:-9.6px;left:20.9587%;width:89px;">
+			<p class="g-pstyle7">permutive</p>
+		</div>
+		<div id="g-ai0-173" class="g-annotations g-aiAbs g-aiPointText" style="top:96.1563%;margin-top:-9.6px;left:21.7332%;width:80px;">
+			<p class="g-pstyle7">kenshoo</p>
+		</div>
+		<div id="g-ai0-174" class="g-annotations g-aiAbs g-aiPointText" style="top:96.7501%;margin-top:-9.6px;left:22.3%;width:73px;">
+			<p class="g-pstyle7">narrativ</p>
+		</div>
+		<div id="g-ai0-175" class="g-annotations g-aiAbs g-aiPointText" style="top:97.5522%;margin-top:-9.3px;left:27.8308%;margin-left:-16px;width:32px;">
+			<p class="g-pstyle5">0&rsquo;</p>
+		</div>
+		<div id="g-ai0-176" class="g-annotations g-aiAbs g-aiPointText" style="top:97.5522%;margin-top:-9.3px;left:41.1405%;margin-left:-19.5px;width:39px;">
+			<p class="g-pstyle5">10&rsquo;</p>
+		</div>
+		<div id="g-ai0-177" class="g-annotations g-aiAbs g-aiPointText" style="top:97.5522%;margin-top:-9.3px;left:57.6885%;margin-left:-20px;width:40px;">
+			<p class="g-pstyle5">20&rsquo;</p>
+		</div>
+		<div id="g-ai0-178" class="g-annotations g-aiAbs g-aiPointText" style="top:97.5522%;margin-top:-9.3px;left:73.6834%;margin-left:-20px;width:40px;">
+			<p class="g-pstyle5">30&rsquo;</p>
+		</div>
+		<div id="g-ai0-179" class="g-annotations g-aiAbs g-aiPointText" style="top:97.5792%;margin-top:-9.3px;right:73.6073%;width:51px;">
+			<p class="g-pstyle6">Time</p>
+		</div>
+		<div id="g-ai0-180" class="g-annotations g-aiAbs g-aiPointText" style="top:97.5792%;margin-top:-9.3px;left:90.1606%;margin-left:-20px;width:40px;">
+			<p class="g-pstyle5">40&rsquo;</p>
+		</div>
+	</div>
+
+	<!-- Artboard: Tablet -->
+	<div id="g-template_viz-Tablet" class="g-artboard" style="width:768px; height:2740px;" data-aspect-ratio="0.28" data-min-width="768" data-max-width="1199">
+<div style=""></div>
+		<img id="g-template_viz-Tablet-img" class="g-aiImg" alt="" src="template_viz-Tablet.png"/>
+		<div id="g-ai1-1" class="g-annotations g-aiAbs g-aiPointText" style="top:1.6851%;margin-top:-7.2px;left:68.7639%;width:122px;">
+			<p class="g-pstyle0">WEBPAGES VISITED</p>
+		</div>
+		<div id="g-ai1-2" class="g-annotations g-aiAbs g-aiPointText" style="top:1.6851%;margin-top:-7.2px;left:85.9837%;width:119px;">
+			<p class="g-pstyle0">TRACKERS FOUND </p>
+		</div>
+		<div id="g-ai1-3" class="g-annotations g-aiAbs g-aiPointText" style="top:1.9822%;margin-top:-17.3px;left:2.7972%;width:352px;">
+			<p class="g-pstyle1">40 minutes of online tracking</p>
+		</div>
+		<div id="g-ai1-4" class="g-annotations g-aiAbs g-aiPointText" style="top:3.2345%;margin-top:-34.6px;left:68.7639%;width:96px;">
+			<p class="g-pstyle2">164</p>
+		</div>
+		<div id="g-ai1-5" class="g-annotations g-aiAbs g-aiPointText" style="top:3.2345%;margin-top:-34.6px;left:85.9837%;width:96px;">
+			<p class="g-pstyle2">109</p>
+		</div>
+		<div id="g-ai1-6" class="g-annotations g-aiAbs g-aiPointText" style="top:2.926%;margin-top:-7.2px;left:2.6957%;width:103px;">
+			<p class="g-pstyle0">PERFORMED BY</p>
+		</div>
+		<div id="g-ai1-7" class="g-annotations g-aiAbs g-aiPointText" style="top:3.5072%;margin-top:-8.1px;left:2.6957%;width:108px;">
+			<p class="g-pstyle3">Camilla Marrese</p>
+		</div>
+		<div id="g-ai1-8" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8144%;margin-top:-6.9px;left:24.6811%;width:85px;">
+			<p class="g-pstyle4">Tracker types:</p>
+		</div>
+		<div id="g-ai1-9" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8603%;margin-top:-7.2px;left:1.5238%;width:127px;">
+			<p class="g-pstyle0">TRACKERS TIMELINE</p>
+		</div>
+		<div id="g-ai1-10" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8509%;margin-top:-6.9px;left:35.6806%;width:72px;">
+			<p class="g-pstyle4">Advertising</p>
+		</div>
+		<div id="g-ai1-11" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8509%;margin-top:-6.9px;left:45.1485%;width:70px;">
+			<p class="g-pstyle4">A/V Player</p>
+		</div>
+		<div id="g-ai1-12" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8509%;margin-top:-6.9px;left:54.3874%;width:44px;">
+			<p class="g-pstyle4">CDN</p>
+		</div>
+		<div id="g-ai1-13" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8509%;margin-top:-6.9px;left:59.6057%;width:115px;">
+			<p class="g-pstyle4">Customer interaction</p>
+		</div>
+		<div id="g-ai1-14" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8509%;margin-top:-6.9px;left:74.3532%;width:63px;">
+			<p class="g-pstyle4">Essential</p>
+		</div>
+		<div id="g-ai1-15" class="g-annotations g-aiAbs g-aiPointText" style="top:4.8509%;margin-top:-6.9px;left:82.4895%;width:82px;">
+			<p class="g-pstyle4">Site analytics</p>
+		</div>
+		<div id="g-ai1-16" class="g-annotations g-aiAbs g-aiPointText" style="top:5.5808%;margin-top:-6.9px;left:63.0427%;width:80px;">
+			<p class="g-pstyle4">Social media</p>
+		</div>
+		<div id="g-ai1-17" class="g-annotations g-aiAbs g-aiPointText" style="top:5.6173%;margin-top:-6.9px;left:35.6561%;width:56px;">
+			<p class="g-pstyle4">Hosting</p>
+		</div>
+		<div id="g-ai1-18" class="g-annotations g-aiAbs g-aiPointText" style="top:5.6173%;margin-top:-6.9px;left:45.1239%;width:43px;">
+			<p class="g-pstyle4">Misc</p>
+		</div>
+		<div id="g-ai1-19" class="g-annotations g-aiAbs g-aiPointText" style="top:5.6173%;margin-top:-6.9px;left:54.3608%;width:64px;">
+			<p class="g-pstyle4">Unknown</p>
+		</div>
+		<div id="g-ai1-20" class="g-annotations g-aiAbs g-aiPointText" style="top:6.8217%;margin-top:-6.9px;left:19.6011%;margin-left:-15px;width:30px;">
+			<p class="g-pstyle5">0&rsquo;</p>
+		</div>
+		<div id="g-ai1-21" class="g-annotations g-aiAbs g-aiPointText" style="top:6.8217%;margin-top:-6.9px;left:35.1915%;margin-left:-17.5px;width:35px;">
+			<p class="g-pstyle5">10&rsquo;</p>
+		</div>
+		<div id="g-ai1-22" class="g-annotations g-aiAbs g-aiPointText" style="top:6.8217%;margin-top:-6.9px;left:54.7215%;margin-left:-17.5px;width:35px;">
+			<p class="g-pstyle5">20&rsquo;</p>
+		</div>
+		<div id="g-ai1-23" class="g-annotations g-aiAbs g-aiPointText" style="top:6.8217%;margin-top:-6.9px;left:73.7109%;margin-left:-18px;width:36px;">
+			<p class="g-pstyle5">30&rsquo;</p>
+		</div>
+		<div id="g-ai1-24" class="g-annotations g-aiAbs g-aiPointText" style="top:6.8217%;margin-top:-6.9px;right:82.2472%;width:44px;">
+			<p class="g-pstyle6">Time</p>
+		</div>
+		<div id="g-ai1-25" class="g-annotations g-aiAbs g-aiPointText" style="top:6.8217%;margin-top:-6.9px;left:93.2055%;margin-left:-18px;width:36px;">
+			<p class="g-pstyle5">40&rsquo;</p>
+		</div>
+		<div id="g-ai1-26" class="g-annotations g-aiAbs g-aiPointText" style="top:8.1936%;margin-top:-7.5px;left:11.1504%;width:74px;">
+			<p class="g-pstyle7">kataweb.it</p>
+		</div>
+		<div id="g-ai1-27" class="g-annotations g-aiAbs g-aiPointText" style="top:8.7776%;margin-top:-7.5px;left:3.3827%;width:134px;">
+			<p class="g-pstyle7">netratings_sitecensus</p>
+		</div>
+		<div id="g-ai1-28" class="g-annotations g-aiAbs g-aiPointText" style="top:9.398%;margin-top:-7.5px;left:11.8173%;width:69px;">
+			<p class="g-pstyle7">facebook</p>
+		</div>
+		<div id="g-ai1-29" class="g-annotations g-aiAbs g-aiPointText" style="top:9.982%;margin-top:-7.5px;left:7.3914%;width:103px;">
+			<p class="g-pstyle7">googleapis.com</p>
+		</div>
+		<div id="g-ai1-30" class="g-annotations g-aiAbs g-aiPointText" style="top:10.6024%;margin-top:-7.5px;left:3.7137%;width:131px;">
+			<p class="g-pstyle7">google_tag_manager</p>
+		</div>
+		<div id="g-ai1-31" class="g-annotations g-aiAbs g-aiPointText" style="top:11.2228%;margin-top:-7.5px;left:13.4033%;width:57px;">
+			<p class="g-pstyle7">google</p>
+		</div>
+		<div id="g-ai1-32" class="g-annotations g-aiAbs g-aiPointText" style="top:11.8068%;margin-top:-7.5px;left:11.6507%;width:70px;">
+			<p class="g-pstyle7">chartbeat</p>
+		</div>
+		<div id="g-ai1-33" class="g-annotations g-aiAbs g-aiPointText" style="top:12.4272%;margin-top:-7.5px;left:11.9031%;width:68px;">
+			<p class="g-pstyle7">webtrekk</p>
+		</div>
+		<div id="g-ai1-34" class="g-annotations g-aiAbs g-aiPointText" style="top:13.0112%;margin-top:-7.5px;left:10.482%;width:79px;">
+			<p class="g-pstyle7">doubleclick</p>
+		</div>
+		<div id="g-ai1-35" class="g-annotations g-aiAbs g-aiPointText" style="top:13.6316%;margin-top:-7.5px;left:14.3233%;width:50px;">
+			<p class="g-pstyle7">gigya</p>
+		</div>
+		<div id="g-ai1-36" class="g-annotations g-aiAbs g-aiPointText" style="top:14.2155%;margin-top:-7.5px;left:10.3156%;width:80px;">
+			<p class="g-pstyle7">krux_digital</p>
+		</div>
+		<div id="g-ai1-37" class="g-annotations g-aiAbs g-aiPointText" style="top:14.836%;margin-top:-7.5px;left:8.8968%;width:91px;">
+			<p class="g-pstyle7">admantx.com</p>
+		</div>
+		<div id="g-ai1-38" class="g-annotations g-aiAbs g-aiPointText" style="top:15.4199%;margin-top:-7.5px;left:8.5593%;width:94px;">
+			<p class="g-pstyle7">facebook_cdn</p>
+		</div>
+		<div id="g-ai1-39" class="g-annotations g-aiAbs g-aiPointText" style="top:16.0404%;margin-top:-7.5px;left:12.9874%;width:60px;">
+			<p class="g-pstyle7">rubicon</p>
+		</div>
+		<div id="g-ai1-40" class="g-annotations g-aiAbs g-aiPointText" style="top:16.6243%;margin-top:-7.5px;left:5.051%;width:121px;">
+			<p class="g-pstyle7">google_syndication</p>
+		</div>
+		<div id="g-ai1-41" class="g-annotations g-aiAbs g-aiPointText" style="top:17.2447%;margin-top:-7.5px;left:14.2398%;width:50px;">
+			<p class="g-pstyle7">teads</p>
+		</div>
+		<div id="g-ai1-42" class="g-annotations g-aiAbs g-aiPointText" style="top:17.8652%;margin-top:-7.5px;left:7.8939%;width:99px;">
+			<p class="g-pstyle7">ampproject.org</p>
+		</div>
+		<div id="g-ai1-43" class="g-annotations g-aiAbs g-aiPointText" style="top:18.4491%;margin-top:-7.5px;left:4.5508%;width:125px;">
+			<p class="g-pstyle7">integral_ad_science</p>
+		</div>
+		<div id="g-ai1-44" class="g-annotations g-aiAbs g-aiPointText" style="top:19.0696%;margin-top:-7.5px;left:13.5728%;width:55px;">
+			<p class="g-pstyle7">gstatic</p>
+		</div>
+		<div id="g-ai1-45" class="g-annotations g-aiAbs g-aiPointText" style="top:19.6535%;margin-top:-7.5px;left:6.7223%;width:108px;">
+			<p class="g-pstyle7">google_analytics</p>
+		</div>
+		<div id="g-ai1-46" class="g-annotations g-aiAbs g-aiPointText" style="top:20.2739%;margin-top:-7.5px;left:12.4841%;width:64px;">
+			<p class="g-pstyle7">neodata</p>
+		</div>
+		<div id="g-ai1-47" class="g-annotations g-aiAbs g-aiPointText" style="top:20.8579%;margin-top:-7.5px;left:12.5699%;width:63px;">
+			<p class="g-pstyle7">amazon</p>
+		</div>
+		<div id="g-ai1-48" class="g-annotations g-aiAbs g-aiPointText" style="top:21.4783%;margin-top:-7.5px;left:9.3119%;width:88px;">
+			<p class="g-pstyle7">amazon_cdn</p>
+		</div>
+		<div id="g-ai1-49" class="g-annotations g-aiAbs g-aiPointText" style="top:22.0622%;margin-top:-7.5px;left:5.3048%;width:119px;">
+			<p class="g-pstyle7">amazon_adsystem</p>
+		</div>
+		<div id="g-ai1-50" class="g-annotations g-aiAbs g-aiPointText" style="top:22.6827%;margin-top:-7.5px;left:11.0653%;width:75px;">
+			<p class="g-pstyle7">pulsepoint</p>
+		</div>
+		<div id="g-ai1-51" class="g-annotations g-aiAbs g-aiPointText" style="top:23.3031%;margin-top:-7.5px;left:1.4592%;width:148px;">
+			<p class="g-pstyle7">media_innovation_group</p>
+		</div>
+		<div id="g-ai1-52" class="g-annotations g-aiAbs g-aiPointText" style="top:23.8871%;margin-top:-7.5px;left:13.239%;width:58px;">
+			<p class="g-pstyle7">adform</p>
+		</div>
+		<div id="g-ai1-53" class="g-annotations g-aiAbs g-aiPointText" style="top:24.5075%;margin-top:-7.5px;left:9.3948%;width:87px;">
+			<p class="g-pstyle7">spotxchange</p>
+		</div>
+		<div id="g-ai1-54" class="g-annotations g-aiAbs g-aiPointText" style="top:25.0915%;margin-top:-7.5px;left:11.7359%;width:69px;">
+			<p class="g-pstyle7">bidswitch</p>
+		</div>
+		<div id="g-ai1-55" class="g-annotations g-aiAbs g-aiPointText" style="top:25.7119%;margin-top:-7.5px;left:13.8215%;width:53px;">
+			<p class="g-pstyle7">openx</p>
+		</div>
+		<div id="g-ai1-56" class="g-annotations g-aiAbs g-aiPointText" style="top:26.2958%;margin-top:-7.5px;left:6.1361%;width:113px;">
+			<p class="g-pstyle7">index_exchange_</p>
+		</div>
+		<div id="g-ai1-57" class="g-annotations g-aiAbs g-aiPointText" style="top:26.9163%;margin-top:-7.5px;left:7.3935%;width:103px;">
+			<p class="g-pstyle7">advertising.com</p>
+		</div>
+		<div id="g-ai1-58" class="g-annotations g-aiAbs g-aiPointText" style="top:27.5002%;margin-top:-7.5px;left:11.3991%;width:72px;">
+			<p class="g-pstyle7">appnexus</p>
+		</div>
+		<div id="g-ai1-59" class="g-annotations g-aiAbs g-aiPointText" style="top:28.1207%;margin-top:-7.5px;left:11.7366%;width:69px;">
+			<p class="g-pstyle7">stickyads</p>
+		</div>
+		<div id="g-ai1-60" class="g-annotations g-aiAbs g-aiPointText" style="top:28.7046%;margin-top:-7.5px;left:13.0703%;width:59px;">
+			<p class="g-pstyle7">exelate</p>
+		</div>
+		<div id="g-ai1-61" class="g-annotations g-aiAbs g-aiPointText" style="top:29.325%;margin-top:-7.5px;left:7.2269%;width:104px;">
+			<p class="g-pstyle7">twitter_analytics</p>
+		</div>
+		<div id="g-ai1-62" class="g-annotations g-aiAbs g-aiPointText" style="top:29.9455%;margin-top:-7.5px;left:3.9631%;width:129px;">
+			<p class="g-pstyle7">yahoo_ad_exchange</p>
+		</div>
+		<div id="g-ai1-63" class="g-annotations g-aiAbs g-aiPointText" style="top:30.5294%;margin-top:-7.5px;left:11.8187%;width:69px;">
+			<p class="g-pstyle7">pubmatic</p>
+		</div>
+		<div id="g-ai1-64" class="g-annotations g-aiAbs g-aiPointText" style="top:31.1498%;margin-top:-7.5px;left:0.0375%;width:161px;">
+			<p class="g-pstyle7">         adobe_aud_manager</p>
+		</div>
+		<div id="g-ai1-65" class="g-annotations g-aiAbs g-aiPointText" style="top:31.7338%;margin-top:-7.5px;left:2.6324%;width:139px;">
+			<p class="g-pstyle7">amazon_web_services</p>
+		</div>
+		<div id="g-ai1-66" class="g-annotations g-aiAbs g-aiPointText" style="top:32.3542%;margin-top:-7.5px;left:5.1361%;width:120px;">
+			<p class="g-pstyle7">amazon_cloudfront</p>
+		</div>
+		<div id="g-ai1-67" class="g-annotations g-aiAbs g-aiPointText" style="top:32.9382%;margin-top:-7.5px;left:6.1368%;width:112px;">
+			<p class="g-pstyle7">typekit_by_adobe</p>
+		</div>
+		<div id="g-ai1-68" class="g-annotations g-aiAbs g-aiPointText" style="top:33.5586%;margin-top:-7.5px;left:13.9074%;width:53px;">
+			<p class="g-pstyle7">vimeo</p>
+		</div>
+		<div id="g-ai1-69" class="g-annotations g-aiAbs g-aiPointText" style="top:34.1425%;margin-top:-7.5px;left:13.0703%;width:59px;">
+			<p class="g-pstyle7">addthis</p>
+		</div>
+		<div id="g-ai1-70" class="g-annotations g-aiAbs g-aiPointText" style="top:34.763%;margin-top:-7.5px;left:12.1518%;width:66px;">
+			<p class="g-pstyle7">pingdom</p>
+		</div>
+		<div id="g-ai1-71" class="g-annotations g-aiAbs g-aiPointText" style="top:35.3834%;margin-top:-7.5px;left:12.5685%;width:63px;">
+			<p class="g-pstyle7">youtube</p>
+		</div>
+		<div id="g-ai1-72" class="g-annotations g-aiAbs g-aiPointText" style="top:35.9674%;margin-top:-7.5px;left:8.0568%;width:98px;">
+			<p class="g-pstyle7">google_photos</p>
+		</div>
+		<div id="g-ai1-73" class="g-annotations g-aiAbs g-aiPointText" style="top:36.5878%;margin-top:-7.5px;left:14.1567%;width:51px;">
+			<p class="g-pstyle7">hotjar</p>
+		</div>
+		<div id="g-ai1-74" class="g-annotations g-aiAbs g-aiPointText" style="top:37.1717%;margin-top:-7.5px;left:11.9031%;width:68px;">
+			<p class="g-pstyle7">imgix.net</p>
+		</div>
+		<div id="g-ai1-75" class="g-annotations g-aiAbs g-aiPointText" style="top:37.7922%;margin-top:-7.5px;left:14.5749%;width:48px;">
+			<p class="g-pstyle7">moat</p>
+		</div>
+		<div id="g-ai1-76" class="g-annotations g-aiAbs g-aiPointText" style="top:38.3761%;margin-top:-7.5px;left:7.139%;width:105px;">
+			<p class="g-pstyle7">facebook_graph</p>
+		</div>
+		<div id="g-ai1-77" class="g-annotations g-aiAbs g-aiPointText" style="top:38.9966%;margin-top:-7.5px;left:3.7996%;width:130px;">
+			<p class="g-pstyle7">akamai_technologies</p>
+		</div>
+		<div id="g-ai1-78" class="g-annotations g-aiAbs g-aiPointText" style="top:39.5805%;margin-top:-7.5px;left:11.8165%;width:69px;">
+			<p class="g-pstyle7">bing_ads</p>
+		</div>
+		<div id="g-ai1-79" class="g-annotations g-aiAbs g-aiPointText" style="top:40.2009%;margin-top:-7.5px;left:12.8202%;width:61px;">
+			<p class="g-pstyle7">linkedin</p>
+		</div>
+		<div id="g-ai1-80" class="g-annotations g-aiAbs g-aiPointText" style="top:40.7849%;margin-top:-7.5px;left:7.6444%;width:101px;">
+			<p class="g-pstyle7">branch_metrics</p>
+		</div>
+		<div id="g-ai1-81" class="g-annotations g-aiAbs g-aiPointText" style="top:41.4053%;margin-top:-7.5px;left:6.9761%;width:106px;">
+			<p class="g-pstyle7">wordpress_stats</p>
+		</div>
+		<div id="g-ai1-82" class="g-annotations g-aiAbs g-aiPointText" style="top:42.0257%;margin-top:-7.5px;left:2.6588%;width:139px;">
+			<p class="g-pstyle7">linkedin_marketing_sol</p>
+		</div>
+		<div id="g-ai1-83" class="g-annotations g-aiAbs g-aiPointText" style="top:42.6097%;margin-top:-7.5px;left:10.6501%;width:78px;">
+			<p class="g-pstyle7">twitter_ads</p>
+		</div>
+		<div id="g-ai1-84" class="g-annotations g-aiAbs g-aiPointText" style="top:43.2301%;margin-top:-7.5px;left:14.7415%;width:46px;">
+			<p class="g-pstyle7">atlas</p>
+		</div>
+		<div id="g-ai1-85" class="g-annotations g-aiAbs g-aiPointText" style="top:43.8141%;margin-top:-7.5px;left:9.3105%;width:88px;">
+			<p class="g-pstyle7">google_fonts</p>
+		</div>
+		<div id="g-ai1-86" class="g-annotations g-aiAbs g-aiPointText" style="top:44.4345%;margin-top:-7.5px;left:11.6507%;width:70px;">
+			<p class="g-pstyle7">bootstrap</p>
+		</div>
+		<div id="g-ai1-87" class="g-annotations g-aiAbs g-aiPointText" style="top:45.0184%;margin-top:-7.5px;left:10.9847%;width:75px;">
+			<p class="g-pstyle7">tripadvisor</p>
+		</div>
+		<div id="g-ai1-88" class="g-annotations g-aiAbs g-aiPointText" style="top:45.6389%;margin-top:-7.5px;left:2.7788%;width:139px;">
+			<p class="g-pstyle7">scorecard_res_beacon</p>
+		</div>
+		<div id="g-ai1-89" class="g-annotations g-aiAbs g-aiPointText" style="top:46.2228%;margin-top:-7.5px;left:8.8938%;width:91px;">
+			<p class="g-pstyle7">google_users</p>
+		</div>
+		<div id="g-ai1-90" class="g-annotations g-aiAbs g-aiPointText" style="top:46.8433%;margin-top:-7.5px;left:12.906%;width:60px;">
+			<p class="g-pstyle7">trustarc</p>
+		</div>
+		<div id="g-ai1-91" class="g-annotations g-aiAbs g-aiPointText" style="top:47.4637%;margin-top:-7.5px;left:12.4856%;width:64px;">
+			<p class="g-pstyle7">outbrain</p>
+		</div>
+		<div id="g-ai1-92" class="g-annotations g-aiAbs g-aiPointText" style="top:48.0476%;margin-top:-7.5px;left:12.4856%;width:64px;">
+			<p class="g-pstyle7">tradelab</p>
+		</div>
+		<div id="g-ai1-93" class="g-annotations g-aiAbs g-aiPointText" style="top:48.6681%;margin-top:-7.5px;left:11.8173%;width:69px;">
+			<p class="g-pstyle7">snapchat</p>
+		</div>
+		<div id="g-ai1-94" class="g-annotations g-aiAbs g-aiPointText" style="top:49.252%;margin-top:-7.5px;left:5.3864%;width:118px;">
+			<p class="g-pstyle7">google_adservices</p>
+		</div>
+		<div id="g-ai1-95" class="g-annotations g-aiAbs g-aiPointText" style="top:49.8725%;margin-top:-7.5px;left:12.6551%;width:62px;">
+			<p class="g-pstyle7">nyt.com</p>
+		</div>
+		<div id="g-ai1-96" class="g-annotations g-aiAbs g-aiPointText" style="top:50.4564%;margin-top:-7.5px;left:15.4928%;width:41px;">
+			<p class="g-pstyle7">adx</p>
+		</div>
+		<div id="g-ai1-97" class="g-annotations g-aiAbs g-aiPointText" style="top:51.0768%;margin-top:-7.5px;left:11.2356%;width:73px;">
+			<p class="g-pstyle7">optimizely</p>
+		</div>
+		<div id="g-ai1-98" class="g-annotations g-aiAbs g-aiPointText" style="top:51.6608%;margin-top:-7.5px;left:11.2326%;width:73px;">
+			<p class="g-pstyle7">datadome</p>
+		</div>
+		<div id="g-ai1-99" class="g-annotations g-aiAbs g-aiPointText" style="top:52.2812%;margin-top:-7.5px;left:9.8123%;width:84px;">
+			<p class="g-pstyle7">iab_consent</p>
+		</div>
+		<div id="g-ai1-100" class="g-annotations g-aiAbs g-aiPointText" style="top:52.8652%;margin-top:-7.5px;left:11.8187%;width:69px;">
+			<p class="g-pstyle7">embed.ly</p>
+		</div>
+		<div id="g-ai1-101" class="g-annotations g-aiAbs g-aiPointText" style="top:53.4856%;margin-top:-7.5px;left:13.4056%;width:57px;">
+			<p class="g-pstyle7">lotame</p>
+		</div>
+		<div id="g-ai1-102" class="g-annotations g-aiAbs g-aiPointText" style="top:54.1061%;margin-top:-7.5px;left:13.0718%;width:59px;">
+			<p class="g-pstyle7">parsely</p>
+		</div>
+		<div id="g-ai1-103" class="g-annotations g-aiAbs g-aiPointText" style="top:54.69%;margin-top:-7.5px;left:13.154%;width:59px;">
+			<p class="g-pstyle7">bluekai</p>
+		</div>
+		<div id="g-ai1-104" class="g-annotations g-aiAbs g-aiPointText" style="top:55.3104%;margin-top:-7.5px;left:7.6444%;width:101px;">
+			<p class="g-pstyle7">instagram_com</p>
+		</div>
+		<div id="g-ai1-105" class="g-annotations g-aiAbs g-aiPointText" style="top:55.8944%;margin-top:-7.5px;left:6.723%;width:108px;">
+			<p class="g-pstyle7">monotype_gmbh</p>
+		</div>
+		<div id="g-ai1-106" class="g-annotations g-aiAbs g-aiPointText" style="top:56.5148%;margin-top:-7.5px;left:12.0697%;width:67px;">
+			<p class="g-pstyle7">gumgum</p>
+		</div>
+		<div id="g-ai1-107" class="g-annotations g-aiAbs g-aiPointText" style="top:57.0988%;margin-top:-7.5px;left:5.9755%;width:114px;">
+			<p class="g-pstyle7">brandmetrics.com</p>
+		</div>
+		<div id="g-ai1-108" class="g-annotations g-aiAbs g-aiPointText" style="top:57.7192%;margin-top:-7.5px;left:14.2412%;width:50px;">
+			<p class="g-pstyle7">celtra</p>
+		</div>
+		<div id="g-ai1-109" class="g-annotations g-aiAbs g-aiPointText" style="top:58.3031%;margin-top:-7.5px;left:11.4997%;width:71px;">
+			<p class="g-pstyle7">jw_player</p>
+		</div>
+		<div id="g-ai1-110" class="g-annotations g-aiAbs g-aiPointText" style="top:58.9236%;margin-top:-7.5px;left:13.0857%;width:59px;">
+			<p class="g-pstyle7">jetpack</p>
+		</div>
+		<div id="g-ai1-111" class="g-annotations g-aiAbs g-aiPointText" style="top:59.544%;margin-top:-7.5px;left:13.9052%;width:53px;">
+			<p class="g-pstyle7">digioh</p>
+		</div>
+		<div id="g-ai1-112" class="g-annotations g-aiAbs g-aiPointText" style="top:60.128%;margin-top:-7.5px;left:11.3998%;width:72px;">
+			<p class="g-pstyle7">quantcast</p>
+		</div>
+		<div id="g-ai1-113" class="g-annotations g-aiAbs g-aiPointText" style="top:60.7484%;margin-top:-7.5px;left:12.9037%;width:61px;">
+			<p class="g-pstyle7">apester</p>
+		</div>
+		<div id="g-ai1-114" class="g-annotations g-aiAbs g-aiPointText" style="top:61.3323%;margin-top:-7.5px;left:11.821%;width:69px;">
+			<p class="g-pstyle7">microsoft</p>
+		</div>
+		<div id="g-ai1-115" class="g-annotations g-aiAbs g-aiPointText" style="top:61.9528%;margin-top:-7.5px;left:10.4799%;width:79px;">
+			<p class="g-pstyle7">quantcount</p>
+		</div>
+		<div id="g-ai1-116" class="g-annotations g-aiAbs g-aiPointText" style="top:62.5367%;margin-top:-7.5px;left:11.5686%;width:71px;">
+			<p class="g-pstyle7">new_relic</p>
+		</div>
+		<div id="g-ai1-117" class="g-annotations g-aiAbs g-aiPointText" style="top:63.1571%;margin-top:-7.5px;left:13.9903%;width:52px;">
+			<p class="g-pstyle7">castle</p>
+		</div>
+		<div id="g-ai1-118" class="g-annotations g-aiAbs g-aiPointText" style="top:63.7411%;margin-top:-7.5px;left:11.8187%;width:69px;">
+			<p class="g-pstyle7">appsflyer</p>
+		</div>
+		<div id="g-ai1-119" class="g-annotations g-aiAbs g-aiPointText" style="top:64.3615%;margin-top:-7.5px;left:10.6486%;width:78px;">
+			<p class="g-pstyle7">stackadapt</p>
+		</div>
+		<div id="g-ai1-120" class="g-annotations g-aiAbs g-aiPointText" style="top:64.9455%;margin-top:-7.5px;left:12.1525%;width:66px;">
+			<p class="g-pstyle7">zemanta</p>
+		</div>
+		<div id="g-ai1-121" class="g-annotations g-aiAbs g-aiPointText" style="top:65.5659%;margin-top:-7.5px;left:12.1525%;width:66px;">
+			<p class="g-pstyle7">pinterest</p>
+		</div>
+		<div id="g-ai1-122" class="g-annotations g-aiAbs g-aiPointText" style="top:66.1863%;margin-top:-7.5px;left:14.6571%;width:47px;">
+			<p class="g-pstyle7">qubit</p>
+		</div>
+		<div id="g-ai1-123" class="g-annotations g-aiAbs g-aiPointText" style="top:66.7703%;margin-top:-7.5px;left:7.3921%;width:103px;">
+			<p class="g-pstyle7">bannerflow.com</p>
+		</div>
+		<div id="g-ai1-124" class="g-annotations g-aiAbs g-aiPointText" style="top:67.3907%;margin-top:-7.5px;left:12.9037%;width:60px;">
+			<p class="g-pstyle7">certona</p>
+		</div>
+		<div id="g-ai1-125" class="g-annotations g-aiAbs g-aiPointText" style="top:67.9747%;margin-top:-7.5px;left:1.2878%;width:150px;">
+			<p class="g-pstyle7">adobe_dyn_tag_mngmnt</p>
+		</div>
+		<div id="g-ai1-126" class="g-annotations g-aiAbs g-aiPointText" style="top:68.5951%;margin-top:-7.5px;left:12.1525%;width:66px;">
+			<p class="g-pstyle7">polar.me</p>
+		</div>
+		<div id="g-ai1-127" class="g-annotations g-aiAbs g-aiPointText" style="top:69.179%;margin-top:-7.5px;left:14.2412%;width:50px;">
+			<p class="g-pstyle7">criteo</p>
+		</div>
+		<div id="g-ai1-128" class="g-annotations g-aiAbs g-aiPointText" style="top:69.7995%;margin-top:-7.5px;left:10.4843%;width:79px;">
+			<p class="g-pstyle7">merkle_rkg</p>
+		</div>
+		<div id="g-ai1-129" class="g-annotations g-aiAbs g-aiPointText" style="top:70.3834%;margin-top:-7.5px;left:11.3169%;width:73px;">
+			<p class="g-pstyle7">tradedesk</p>
+		</div>
+		<div id="g-ai1-130" class="g-annotations g-aiAbs g-aiPointText" style="top:71.0038%;margin-top:-7.5px;left:12.2377%;width:66px;">
+			<p class="g-pstyle7">liveramp</p>
+		</div>
+		<div id="g-ai1-131" class="g-annotations g-aiAbs g-aiPointText" style="top:71.6243%;margin-top:-7.5px;left:11.4028%;width:72px;">
+			<p class="g-pstyle7">comscore</p>
+		</div>
+		<div id="g-ai1-132" class="g-annotations g-aiAbs g-aiPointText" style="top:72.2082%;margin-top:-7.5px;left:11.6486%;width:70px;">
+			<p class="g-pstyle7">optanaon</p>
+		</div>
+		<div id="g-ai1-133" class="g-annotations g-aiAbs g-aiPointText" style="top:72.8287%;margin-top:-7.5px;left:12.4864%;width:64px;">
+			<p class="g-pstyle7">onetrust</p>
+		</div>
+		<div id="g-ai1-134" class="g-annotations g-aiAbs g-aiPointText" style="top:73.4126%;margin-top:-7.5px;left:13.9081%;width:53px;">
+			<p class="g-pstyle7">twitter</p>
+		</div>
+		<div id="g-ai1-135" class="g-annotations g-aiAbs g-aiPointText" style="top:74.033%;margin-top:-7.5px;left:5.5559%;width:117px;">
+			<p class="g-pstyle7">twitter_syndication</p>
+		</div>
+		<div id="g-ai1-136" class="g-annotations g-aiAbs g-aiPointText" style="top:74.617%;margin-top:-7.5px;left:7.3085%;width:103px;">
+			<p class="g-pstyle7">sailthru_horizon</p>
+		</div>
+		<div id="g-ai1-137" class="g-annotations g-aiAbs g-aiPointText" style="top:75.2374%;margin-top:-7.5px;left:5.6343%;width:116px;">
+			<p class="g-pstyle7">bounce_exchange</p>
+		</div>
+		<div id="g-ai1-138" class="g-annotations g-aiAbs g-aiPointText" style="top:75.8214%;margin-top:-7.5px;left:12.1525%;width:66px;">
+			<p class="g-pstyle7">turn_inc.</p>
+		</div>
+		<div id="g-ai1-139" class="g-annotations g-aiAbs g-aiPointText" style="top:76.4418%;margin-top:-7.5px;left:6.1391%;width:112px;">
+			<p class="g-pstyle7">linkedin_analytics</p>
+		</div>
+		<div id="g-ai1-140" class="g-annotations g-aiAbs g-aiPointText" style="top:77.0257%;margin-top:-7.5px;left:14.1553%;width:51px;">
+			<p class="g-pstyle7">tapad</p>
+		</div>
+		<div id="g-ai1-141" class="g-annotations g-aiAbs g-aiPointText" style="top:77.6462%;margin-top:-7.5px;left:11.8216%;width:69px;">
+			<p class="g-pstyle7">skimlinks</p>
+		</div>
+		<div id="g-ai1-142" class="g-annotations g-aiAbs g-aiPointText" style="top:78.2666%;margin-top:-7.5px;left:6.8066%;width:107px;">
+			<p class="g-pstyle7">orc_international</p>
+		</div>
+		<div id="g-ai1-143" class="g-annotations g-aiAbs g-aiPointText" style="top:78.8506%;margin-top:-7.5px;left:13.7541%;width:54px;">
+			<p class="g-pstyle7">jquery</p>
+		</div>
+		<div id="g-ai1-144" class="g-annotations g-aiAbs g-aiPointText" style="top:79.471%;margin-top:-7.5px;left:7.6415%;width:101px;">
+			<p class="g-pstyle7">deepintent.com</p>
+		</div>
+		<div id="g-ai1-145" class="g-annotations g-aiAbs g-aiPointText" style="top:80.0549%;margin-top:-7.5px;left:12.2348%;width:66px;">
+			<p class="g-pstyle7">bouncex</p>
+		</div>
+		<div id="g-ai1-146" class="g-annotations g-aiAbs g-aiPointText" style="top:80.6754%;margin-top:-7.5px;left:10.3148%;width:80px;">
+			<p class="g-pstyle7">trueanthem</p>
+		</div>
+		<div id="g-ai1-147" class="g-annotations g-aiAbs g-aiPointText" style="top:81.2593%;margin-top:-7.5px;left:10.8159%;width:77px;">
+			<p class="g-pstyle7">radiumone</p>
+		</div>
+		<div id="g-ai1-148" class="g-annotations g-aiAbs g-aiPointText" style="top:81.8798%;margin-top:-7.5px;left:14.2404%;width:50px;">
+			<p class="g-pstyle7">adroll</p>
+		</div>
+		<div id="g-ai1-149" class="g-annotations g-aiAbs g-aiPointText" style="top:82.4637%;margin-top:-7.5px;left:9.3985%;width:87px;">
+			<p class="g-pstyle7">rackcdn.com</p>
+		</div>
+		<div id="g-ai1-150" class="g-annotations g-aiAbs g-aiPointText" style="top:83.0841%;margin-top:-7.5px;left:11.4006%;width:72px;">
+			<p class="g-pstyle7">cloudflare</p>
+		</div>
+		<div id="g-ai1-151" class="g-annotations g-aiAbs g-aiPointText" style="top:83.7046%;margin-top:-7.5px;left:12.1525%;width:66px;">
+			<p class="g-pstyle7">segment</p>
+		</div>
+		<div id="g-ai1-152" class="g-annotations g-aiAbs g-aiPointText" style="top:84.2885%;margin-top:-7.5px;left:11.4006%;width:72px;">
+			<p class="g-pstyle7">amplitude</p>
+		</div>
+		<div id="g-ai1-153" class="g-annotations g-aiAbs g-aiPointText" style="top:84.909%;margin-top:-7.5px;left:8.4778%;width:95px;">
+			<p class="g-pstyle7">cedexis_radar</p>
+		</div>
+		<div id="g-ai1-154" class="g-annotations g-aiAbs g-aiPointText" style="top:85.4929%;margin-top:-7.5px;left:8.2292%;width:96px;">
+			<p class="g-pstyle7">optimicdn.com</p>
+		</div>
+		<div id="g-ai1-155" class="g-annotations g-aiAbs g-aiPointText" style="top:86.1134%;margin-top:-7.5px;left:10.1498%;width:82px;">
+			<p class="g-pstyle7">mncdn.com</p>
+		</div>
+		<div id="g-ai1-156" class="g-annotations g-aiAbs g-aiPointText" style="top:86.6973%;margin-top:-7.5px;left:8.7302%;width:93px;">
+			<p class="g-pstyle7">wikimedia.org</p>
+		</div>
+		<div id="g-ai1-157" class="g-annotations g-aiAbs g-aiPointText" style="top:87.3177%;margin-top:-7.5px;left:13.0718%;width:59px;">
+			<p class="g-pstyle7">tealium</p>
+		</div>
+		<div id="g-ai1-158" class="g-annotations g-aiAbs g-aiPointText" style="top:87.9017%;margin-top:-7.5px;left:7.3914%;width:103px;">
+			<p class="g-pstyle7">rakuten_display</p>
+		</div>
+		<div id="g-ai1-159" class="g-annotations g-aiAbs g-aiPointText" style="top:88.5221%;margin-top:-7.5px;left:7.2556%;width:104px;">
+			<p class="g-pstyle7">linksynergy.com</p>
+		</div>
+		<div id="g-ai1-160" class="g-annotations g-aiAbs g-aiPointText" style="top:89.1425%;margin-top:-7.5px;left:11.7359%;width:69px;">
+			<p class="g-pstyle7">salecycle</p>
+		</div>
+		<div id="g-ai1-161" class="g-annotations g-aiAbs g-aiPointText" style="top:89.7265%;margin-top:-7.5px;left:5.8867%;width:114px;">
+			<p class="g-pstyle7">contentsquare.net</p>
+		</div>
+		<div id="g-ai1-162" class="g-annotations g-aiAbs g-aiPointText" style="top:90.3469%;margin-top:-7.5px;left:10.5672%;width:78px;">
+			<p class="g-pstyle7">dc_stormiq</p>
+		</div>
+		<div id="g-ai1-163" class="g-annotations g-aiAbs g-aiPointText" style="top:90.9309%;margin-top:-7.5px;left:10.7329%;width:77px;">
+			<p class="g-pstyle7">fastlylb.net</p>
+		</div>
+		<div id="g-ai1-164" class="g-annotations g-aiAbs g-aiPointText" style="top:91.5513%;margin-top:-7.5px;left:7.5601%;width:102px;">
+			<p class="g-pstyle7">sitelabweb.com</p>
+		</div>
+		<div id="g-ai1-165" class="g-annotations g-aiAbs g-aiPointText" style="top:92.1353%;margin-top:-7.5px;left:13.1709%;width:59px;">
+			<p class="g-pstyle7">jsdelivr</p>
+		</div>
+		<div id="g-ai1-166" class="g-annotations g-aiAbs g-aiPointText" style="top:92.7557%;margin-top:-7.5px;left:10.9853%;width:75px;">
+			<p class="g-pstyle7">stripe.com</p>
+		</div>
+		<div id="g-ai1-167" class="g-annotations g-aiAbs g-aiPointText" style="top:93.3396%;margin-top:-7.5px;left:9.1461%;width:89px;">
+			<p class="g-pstyle7">shopify_stats</p>
+		</div>
+		<div id="g-ai1-168" class="g-annotations g-aiAbs g-aiPointText" style="top:93.9601%;margin-top:-7.5px;left:7.4764%;width:102px;">
+			<p class="g-pstyle7">shopifycdn.com</p>
+		</div>
+		<div id="g-ai1-169" class="g-annotations g-aiAbs g-aiPointText" style="top:94.544%;margin-top:-7.5px;left:6.307%;width:111px;">
+			<p class="g-pstyle7">shopifycloud.com</p>
+		</div>
+		<div id="g-ai1-170" class="g-annotations g-aiAbs g-aiPointText" style="top:95.1644%;margin-top:-7.5px;left:13.4878%;width:56px;">
+			<p class="g-pstyle7">paypal</p>
+		</div>
+		<div id="g-ai1-171" class="g-annotations g-aiAbs g-aiPointText" style="top:95.7849%;margin-top:-7.5px;left:8.9767%;width:91px;">
+			<p class="g-pstyle7">nakanohito.jp</p>
+		</div>
+		<div id="g-ai1-172" class="g-annotations g-aiAbs g-aiPointText" style="top:96.3688%;margin-top:-7.5px;left:11.3185%;width:73px;">
+			<p class="g-pstyle7">permutive</p>
+		</div>
+		<div id="g-ai1-173" class="g-annotations g-aiAbs g-aiPointText" style="top:96.9893%;margin-top:-7.5px;left:12.2348%;width:66px;">
+			<p class="g-pstyle7">kenshoo</p>
+		</div>
+		<div id="g-ai1-174" class="g-annotations g-aiAbs g-aiPointText" style="top:97.5732%;margin-top:-7.5px;left:12.9052%;width:60px;">
+			<p class="g-pstyle7">narrativ</p>
+		</div>
+		<div id="g-ai1-175" class="g-annotations g-aiAbs g-aiPointText" style="top:98.4275%;margin-top:-6.9px;left:19.4709%;margin-left:-15px;width:30px;">
+			<p class="g-pstyle5">0&rsquo;</p>
+		</div>
+		<div id="g-ai1-176" class="g-annotations g-aiAbs g-aiPointText" style="top:98.4275%;margin-top:-6.9px;left:35.1915%;margin-left:-17.5px;width:35px;">
+			<p class="g-pstyle5">10&rsquo;</p>
+		</div>
+		<div id="g-ai1-177" class="g-annotations g-aiAbs g-aiPointText" style="top:98.4275%;margin-top:-6.9px;left:54.7215%;margin-left:-17.5px;width:35px;">
+			<p class="g-pstyle5">20&rsquo;</p>
+		</div>
+		<div id="g-ai1-178" class="g-annotations g-aiAbs g-aiPointText" style="top:98.4275%;margin-top:-6.9px;left:73.7109%;margin-left:-18px;width:36px;">
+			<p class="g-pstyle5">30&rsquo;</p>
+		</div>
+		<div id="g-ai1-179" class="g-annotations g-aiAbs g-aiPointText" style="top:98.4275%;margin-top:-6.9px;right:82.2472%;width:44px;">
+			<p class="g-pstyle6">Time</p>
+		</div>
+		<div id="g-ai1-180" class="g-annotations g-aiAbs g-aiPointText" style="top:98.4275%;margin-top:-6.9px;left:93.2055%;margin-left:-18px;width:36px;">
+			<p class="g-pstyle5">40&rsquo;</p>
+		</div>
+	</div>
+
+	<!-- Artboard: phone -->
+	<div id="g-template_viz-phone" class="g-artboard" style="max-width: 320px;max-height: 944px" data-aspect-ratio="0.339" data-min-width="0" data-max-width="767">
+<div style="padding: 0 0 294.9872% 0;"></div>
+		<img id="g-template_viz-phone-img" class="g-aiImg" alt="" src="template_viz-phone.png"/>
+		<div id="g-ai2-1" class="g-annotations g-aiAbs g-aiPointText" style="top:2.6443%;margin-top:-15px;left:4.5844%;width:311px;">
+			<p class="g-pstyle0">40 minutes of online tracking</p>
+		</div>
+		<div id="g-ai2-2" class="g-annotations g-aiAbs g-aiPointText" style="top:6.9521%;margin-top:-34.6px;left:71.4108%;width:96px;">
+			<p class="g-pstyle1">164</p>
+		</div>
+		<div id="g-ai2-3" class="g-annotations g-aiAbs g-aiPointText" style="top:5.2778%;margin-top:-4.8px;left:34.7827%;width:37px;">
+			<p class="g-pstyle2">CDN</p>
+		</div>
+		<div id="g-ai2-4" class="g-annotations g-aiAbs g-aiPointText" style="top:5.3837%;margin-top:-4.8px;left:51.7566%;width:53px;">
+			<p class="g-pstyle2">essential</p>
+		</div>
+		<div id="g-ai2-5" class="g-annotations g-aiAbs g-aiPointText" style="top:5.3837%;margin-top:-4.8px;left:11.6519%;width:61px;">
+			<p class="g-pstyle2">advertising</p>
+		</div>
+		<div id="g-ai2-6" class="g-annotations g-aiAbs g-aiPointText" style="top:7.9474%;margin-top:-9px;left:11.9998%;width:53px;">
+			<p class="g-pstyle2">site </p>
+			<p class="g-pstyle2">analytics</p>
+		</div>
+		<div id="g-ai2-7" class="g-annotations g-aiAbs g-aiPointText" style="top:8.2652%;margin-top:-9px;left:51.7444%;width:59px;">
+			<p class="g-pstyle2">customer </p>
+			<p class="g-pstyle2">interaction</p>
+		</div>
+		<div id="g-ai2-8" class="g-annotations g-aiAbs g-aiPointText" style="top:8.2652%;margin-top:-9px;left:34.8987%;width:43px;">
+			<p class="g-pstyle2">A/V </p>
+			<p class="g-pstyle2">player</p>
+		</div>
+		<div id="g-ai2-9" class="g-annotations g-aiAbs g-aiPointText" style="top:9.4093%;margin-top:-4.8px;left:74.4659%;width:93px;">
+			<p class="g-pstyle2">WEBPAGES VISITED</p>
+		</div>
+		<div id="g-ai2-10" class="g-annotations g-aiAbs g-aiPointText" style="top:13.0964%;margin-top:-34.6px;left:73.0368%;width:96px;">
+			<p class="g-pstyle1">109</p>
+		</div>
+		<div id="g-ai2-11" class="g-annotations g-aiAbs g-aiPointText" style="top:10.6806%;margin-top:-4.8px;left:12.3276%;width:65px;">
+			<p class="g-pstyle2">social media</p>
+		</div>
+		<div id="g-ai2-12" class="g-annotations g-aiAbs g-aiPointText" style="top:15.2359%;margin-top:-4.8px;left:75.4315%;width:89px;">
+			<p class="g-pstyle2">TRACKERS FOUND</p>
+		</div>
+		<div id="g-ai2-13" class="g-annotations g-aiAbs g-aiPointText" style="top:16.89%;margin-top:-3.4px;left:6.9107%;margin-left:-13px;width:26px;">
+			<p class="g-pstyle3">0&rsquo;</p>
+		</div>
+		<div id="g-ai2-14" class="g-annotations g-aiAbs g-aiPointText" style="top:16.89%;margin-top:-3.4px;left:25.5426%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle3">10&rsquo;</p>
+		</div>
+		<div id="g-ai2-15" class="g-annotations g-aiAbs g-aiPointText" style="top:16.89%;margin-top:-3.4px;left:48.804%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle3">20&rsquo;</p>
+		</div>
+		<div id="g-ai2-16" class="g-annotations g-aiAbs g-aiPointText" style="top:16.89%;margin-top:-3.4px;left:71.3419%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle3">30&rsquo;</p>
+		</div>
+		<div id="g-ai2-17" class="g-annotations g-aiAbs g-aiPointText" style="top:16.8759%;margin-top:-3.3px;right:95.6531%;width:32px;">
+			<p class="g-pstyle4">Time</p>
+		</div>
+		<div id="g-ai2-18" class="g-annotations g-aiAbs g-aiPointText" style="top:16.89%;margin-top:-3.4px;left:94.559%;margin-left:-14.5px;width:29px;">
+			<p class="g-pstyle3">40&rsquo;</p>
+		</div>
+	</div>
+
+</div>
+
     <!-- do NOT change the following script -->
     <script type="text/javascript">
       (function() {
